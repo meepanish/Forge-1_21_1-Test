@@ -1,3 +1,5 @@
 {
-  "item.mctest.bone_shard": "Bone Shard"
+  "item.mctest.bone_shard": "Bone Shard",
+
+  "creativetab.skeletons_enhanced" : "Skeletons Enhanced"
 }
