@@ -1,6 +1,10 @@
 package com.jigglebounce.mctest;
 
+import com.jigglebounce.mctest.item.ModItems;
+import com.jigglebounce.mctest.item.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,9 +29,13 @@ public class MCTestMod
     public MCTestMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        ModItems.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+
+
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,7 +53,9 @@ public class MCTestMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    { if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        event.accept(ModItems.BONE_SHARD);
+    }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
