@@ -33,7 +33,6 @@ public class MCTestMod
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModEntities.register(modEventBus);
-        GeckoLib.initialize();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
