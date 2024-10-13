@@ -1,6 +1,8 @@
 package com.jigglebounce.mctest;
 
 import com.jigglebounce.mctest.entity.ModEntities;
+import com.jigglebounce.mctest.entity.client.KelpSkeletonGeoRenderer;
+import com.jigglebounce.mctest.event.ModEventBusEvents;
 import com.jigglebounce.mctest.item.ModItems;
 import com.jigglebounce.mctest.item.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
@@ -33,6 +35,7 @@ public class MCTestMod
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModEntities.register(modEventBus);
+//        ModEventBusEvents.registerRenderers();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
