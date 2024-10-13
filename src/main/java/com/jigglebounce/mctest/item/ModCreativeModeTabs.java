@@ -17,6 +17,11 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.skeletons_enhanced"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BONE_SHARD.get());
+                        output.accept(ModItems.BONE_SPEAR.get());
+                        output.accept(ModItems.BONE_PICKAXE.get());
+                        output.accept(ModItems.BONE_AXE.get());
+                        output.accept(ModItems.BONE_SHOVEL.get());
+                        output.accept(ModItems.BONE_HOE.get());
                     }).build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);

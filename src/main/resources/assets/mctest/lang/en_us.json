@@ -1,5 +1,10 @@
 {
   "item.mctest.bone_shard": "Bone Shard",
+  "item.mctest.bone_spear_item": "Bone Spear",
+  "item.mctest.bone_pickaxe": "Bone Pickaxe",
+  "item.mctest.bone_axe": "Bone Axe",
+  "item.mctest.bone_shovel": "Bone Shovel",
+  "item.mctest.bone_hoe": "Bone Hoe",
 
   "creativetab.skeletons_enhanced" : "Skeletons Enhanced"
 }
