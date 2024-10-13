@@ -1,9 +1,9 @@
 package com.jigglebounce.mctest;
 
+import com.jigglebounce.mctest.entity.ModEntities;
 import com.jigglebounce.mctest.item.ModItems;
 import com.jigglebounce.mctest.item.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,6 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MCTestMod.MOD_ID)
@@ -31,8 +32,12 @@ public class MCTestMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
+        GeckoLib.initialize();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+
 
 
 

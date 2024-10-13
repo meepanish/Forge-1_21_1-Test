@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "mctest:bone_shard"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    }
+  },
+  "pattern": [
+    "bbb",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mctest:bone_pickaxe"
+  }
+}
