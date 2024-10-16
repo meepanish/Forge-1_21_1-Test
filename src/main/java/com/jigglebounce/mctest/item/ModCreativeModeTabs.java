@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BONE_AXE.get());
                         output.accept(ModItems.BONE_SHOVEL.get());
                         output.accept(ModItems.BONE_HOE.get());
+                        output.accept(ModItems.BONE_SWORD.get());
+                        output.accept(ModItems.KELP_SKELETON_SPAWN_EGG.get());
                     }).build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);

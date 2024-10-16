@@ -6,6 +6,7 @@ import com.jigglebounce.mctest.event.ModEventBusEvents;
 import com.jigglebounce.mctest.item.ModItems;
 import com.jigglebounce.mctest.item.ModCreativeModeTabs;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -78,6 +79,7 @@ public class MCTestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(ModEntities.KELP_SKELETON.get(), KelpSkeletonGeoRenderer::new);
         }
     }
 }

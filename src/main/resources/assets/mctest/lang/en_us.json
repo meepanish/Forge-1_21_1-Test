@@ -4,7 +4,11 @@
   "item.mctest.bone_pickaxe": "Bone Pickaxe",
   "item.mctest.bone_axe": "Bone Axe",
   "item.mctest.bone_shovel": "Bone Shovel",
+  "item.mctest.bone_sword": "Bone Sword",
   "item.mctest.bone_hoe": "Bone Hoe",
+  "item.mctest.kelp_skeleton_spawn_egg": "Kelp Skeleton Spawn Egg",
 
-  "creativetab.skeletons_enhanced" : "Skeletons Enhanced"
+  "creativetab.skeletons_enhanced" : "Skeletons Enhanced",
+
+  "entity.mctest.kelp_skeleton": "Kelp Skeleton"
 }

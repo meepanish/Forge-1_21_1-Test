@@ -17,6 +17,6 @@ public class ModEventBusEvents {
     }
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
-        event.put(ModEntities.KELP_SKELETON.get(), KelpSkeleton.createAttributes().build());
+        event.put(ModEntities.KELP_SKELETON.get(), KelpSkeleton.setAttributes());
     }
 }

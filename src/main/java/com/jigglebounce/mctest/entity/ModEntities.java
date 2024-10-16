@@ -14,7 +14,7 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MCTestMod.MOD_ID);
     public static final RegistryObject<EntityType<KelpSkeleton>> KELP_SKELETON =
             ENTITY_TYPES.register("kelp_skeleton", () -> EntityType.Builder.of(KelpSkeleton::new, MobCategory.MONSTER)
-                    .sized(2.9f, 0.9f).build("kelp_skeleton"));
+                    .sized(0.9f, 2.9f).build("kelp_skeleton"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
